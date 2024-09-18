@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bakery Name</title>
+    <meta name="description" content="Delicious homemade baked goods, crafted with love at Your Bakery Name.">
+    <meta name="keywords" content="bakery, cakes, bread, pastries, homemade">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Bakery Logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="loyalty.html">Loyalty Program</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="login-signup">
+            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn">Sign Up</a>
+        </div>
+    </header>
+
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="dynamic-text"></span></h1>
+            <p class="hero-subtitle">Delicious homemade baked goods, crafted with love.</p>
+            <a href="#gallery" class="btn cta-btn">Explore Our Products</a>
+        </div>
+        <div class="hero-image parallax-bg"></div>
+        <div class="floating-elements">
+            <img src="bread.png" alt="Floating bread" class="float float-1">
+            <img src="cake.png" alt="Floating cake" class="float float-2">
+            <img src="croissant.png" alt="Floating croissant" class="float float-3">
+            <img src="cupcake.png" alt="Floating cupcake" class="float float-4">
+        </div>
+    </section>
+
+    <div id="gallery" class="section gallery">
+        <h2>Our Baked Goods</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="croissant.jpg" alt="Flaky Croissant">
+                <div class="product-info">
+                    <h3>Flaky Croissant</h3>
+                    <p>Buttery, golden, and perfectly crisp</p>
+                    <span class="price">$3.99</span>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="chocolate-cake.jpg" alt="Decadent Chocolate Cake">
+                <div class="product-info">
+                    <h3>Decadent Chocolate Cake</h3>
+                    <p>Rich, moist, and utterly indulgent</p>
+                    <span class="price">$24.99</span>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="apple-pie.jpg" alt="Classic Apple Pie">
+                <div class="product-info">
+                    <h3>Classic Apple Pie</h3>
+                    <p>Warm spices and tender apples in a flaky crust</p>
+                    <span class="price">$18.99</span>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="artisan-bread.jpg" alt="Artisan Sourdough Bread">
+                <div class="product-info">
+                    <h3>Artisan Sourdough Bread</h3>
+                    <p>Crusty exterior, soft interior, full of flavor</p>
+                    <span class="price">$6.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-decorations">
+        <img src="flour-dusting.png" alt="Flour Dusting" class="flour-dust">
+        <img src="rolling-pin.png" alt="Rolling Pin" class="rolling-pin">
+        <img src="whisk.png" alt="Whisk" class="whisk">
+        <img src="measuring-cups.png" alt="Measuring Cups" class="measuring-cups">
+    </div>
+
+    <section id="loyalty" class="section loyalty">
+        <h2>Loyalty Program</h2>
+        <p>Sign up for our loyalty program and earn rewards with every purchase.</p>
+        <a href="#signup" class="btn">Join Now</a>
+    </section>
+
+    <section id="reviews" class="section reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-list">
+            <div class="review-item">
+                <p>"Amazing cakes! The best I've ever had!"</p>
+                - Customer Name
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-details">
+            <p>Phone: 123-456-7890</p>
+            <p>Email: info@yourbakery.com</p>
+            <p>Address: 123 Bakery Lane, Your City, Your State</p>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">×</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Lightbox Image">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
